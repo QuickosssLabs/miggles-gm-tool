@@ -62,4 +62,4 @@ function draw() {
 // download final GM picture
 document.getElementById('downloadBtn').addEventListener('click', function() {
     let link = document.createElement('a');
-    link.download = 'GmNoPunks.png'; link.href = canvas.toDataURL(); link.click(); });
+    link.download = 'GmNoMiggles.png'; link.href = canvas.toDataURL(); link.click(); });
