@@ -1,0 +1,59 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    background-color: #c1cfff;
+}
+
+#canvasContainer {
+    margin-top: 20px;
+}
+
+canvas {
+    border: 1px solid #000;
+    max-width: 90%;
+}
+
+.controls {
+    margin: 20px 0;
+}
+
+label {
+    margin-right: 10px;
+}
+
+/* overlay container */
+.overlay-container {
+    display: inline-block;
+    margin: 10px;
+    text-align: center;
+}
+
+.overlay-option {
+    cursor: pointer;
+    border: 1px solid #ddd;
+    padding: 5px;
+}
+
+.overlay-name {
+    margin-top: 5px;
+    font-size: 14px;
+}
+
+/* Footer styling */
+footer {
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #c2f1ff;
+    font-size: 14px;
+}
+
+footer a {
+    color: #333;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}

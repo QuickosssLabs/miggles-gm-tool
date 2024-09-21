@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Miggles GM Tool</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Miggles GM Tool</h1>
+    
+    <!-- Load image -->
+    <input type="file" id="imageLoader" accept="image/*"><br><br>
+
+    <!-- Overlay Selection -->
+    <div id="overlayMenu">
+        <h3>Choose a matching color :</h3>
+        <div class="overlay-container">
+            <img class="overlay-option" src="images/miggles/overlay1.png" alt="Overlay 1" width="100" onclick="selectOverlay('images/miggles/overlay1.png')">
+            <div class="overlay-name">Black Strip Base GM</div>
+        </div>
+        <div class="overlay-container">
+            <img class="overlay-option" src="images/miggles/overlay2.png" alt="Overlay 2" width="100" onclick="selectOverlay('images/miggles/overlay2.png')">
+            <div class="overlay-name">Black Strip GM</div>
+        </div>
+        <div class="overlay-container">
+            <img class="overlay-option" src="images/miggles/overlay3.png" alt="Overlay 3" width="100" onclick="selectOverlay('images/miggles/overlay3.png')">
+            <div class="overlay-name">Brown Base GM</div>
+        </div>
+        <div class="overlay-container">
+            <img class="overlay-option" src="images/miggles/overlay4.png" alt="Overlay 4" width="100" onclick="selectOverlay('images/miggles/overlay4.png')">
+            <div class="overlay-name">Brown GM</div>
+        </div>
+        <div class="overlay-container">
+            <img class="overlay-option" src="images/miggles/overlay5.png" alt="Overlay 5" width="100" onclick="selectOverlay('images/miggles/overlay5.png')">
+            <div class="overlay-name">Brown Strip Base GM</div>
+        </div>
+        <div class="overlay-container">
+            <img class="overlay-option" src="images/miggles/overlay6.png" alt="Overlay 6" width="100" onclick="selectOverlay('images/miggles/overlay6.png')">
+            <div class="overlay-name">Brown Strip GM</div>
+        </div>
+        <div class="overlay-container">
+            <img class="overlay-option" src="images/miggles/overlay7.png" alt="Overlay 7" width="100" onclick="selectOverlay('images/miggles/overlay7.png')">
+            <div class="overlay-name">Cream Base GM</div>
+        </div>
+        <div class="overlay-container">
+            <img class="overlay-option" src="images/miggles/overlay8.png" alt="Overlay 8" width="100" onclick="selectOverlay('images/miggles/overlay8.png')">
+            <div class="overlay-name">Cream GM</div>
+        </div>
+        <div class="overlay-container">
+            <img class="overlay-option" src="images/miggles/overlay9.png" alt="Overlay 9" width="100" onclick="selectOverlay('images/miggles/overlay9.png')">
+            <div class="overlay-name">Gold Base GM</div>
+        </div>
+        <div class="overlay-container">
+            <img class="overlay-option" src="images/miggles/overlay10.png" alt="Overlay 10" width="100" onclick="selectOverlay('images/miggles/overlay10.png')">
+            <div class="overlay-name">Gold GM</div>
+        </div>
+        <div class="overlay-container">
+            <img class="overlay-option" src="images/miggles/overlay11.png" alt="Overlay 11" width="100" onclick="selectOverlay('images/miggles/overlay11.png')">
+            <div class="overlay-name">Red Strip Base GM</div>
+        </div>
+        <div class="overlay-container">
+            <img class="overlay-option" src="images/miggles/overlay12.png" alt="Overlay 12" width="100" onclick="selectOverlay('images/miggles/overlay12.png')">
+            <div class="overlay-name">Red Strip GM</div>
+        </div>
+        <div class="overlay-container">
+            <img class="overlay-option" src="images/miggles/overlay13.png" alt="Overlay 13" width="100" onclick="selectOverlay('images/miggles/overlay13.png')">
+            <div class="overlay-name">White Base GM</div>
+        </div>
+        <div class="overlay-container">
+            <img class="overlay-option" src="images/miggles/overlay14.png" alt="Overlay 14" width="100" onclick="selectOverlay('images/miggles/overlay14.png')">
+            <div class="overlay-name">White GM</div>
+        </div>
+    </div>
+    
+    <!-- Adjust Overlay -->
+    <div class="controls">
+        <label for="overlaySize">Overlay Size :</label>
+        <input type="range" id="overlaySize" min="10" max="200" value="100">
+        
+        <label for="overlayInsetX">Inset X :</label>
+        <input type="range" id="overlayInsetX" min="-800" max="200" value="0">
+        
+        <label for="overlayInsetY">Inset Y :</label>
+        <input type="range" id="overlayInsetY" min="-800" max="200" value="0">
+    </div>
+    
+    <!--Canvas Zone -->
+    <div id="canvasContainer">
+        <canvas id="imageCanvas"></canvas>
+    </div>
+    
+    <!-- Download Btn -->
+    <button id="downloadBtn">Download</button>
+
+    <!-- Footer -->
+    <footer>
+        <a href="https://opensea.io/collection/miggles-on-base">See The Miggles collection on Opensea</a>
+        <p>GM Tool created by <a href="https://twitter.com/0x_Quickosss" target="_blank">Quickosss</a></p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
